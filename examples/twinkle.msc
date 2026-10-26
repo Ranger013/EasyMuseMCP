@@ -1,0 +1,24 @@
+title: 小星星
+subtitle: Twinkle, Twinkle, Little Star
+composer: 法国民谣
+key: C
+time: 4/4
+tempo: 100
+
+part "Piano" instrument=piano staves=2 clefs=treble,bass
+
+voices 1
+C5/4 C5/4 G5/4 G5/4 | A5/4 A5/4 G5/2 |
+F5/4 F5/4 E5/4 E5/4 | D5/4 D5/4 C5/2 |
+G5/4 G5/4 F5/4 F5/4 | E5/4 E5/4 D5/2 |
+G5/4 G5/4 F5/4 F5/4 | E5/4 E5/4 D5/2 |
+C5/4 C5/4 G5/4 G5/4 | A5/4 A5/4 G5/2 |
+F5/4 F5/4 E5/4 E5/4 | D5/4 D5/4 C5/2 |
+
+voices 2
+C3/2 C3/2 | F2/2 C3/2 |
+F2/2 C3/2 | G2/2 C3/2 |
+C3/2 F2/2 | C3/2 G2/2 |
+C3/2 F2/2 | C3/2 G2/2 |
+C3/2 C3/2 | F2/2 C3/2 |
+F2/2 C3/2 | G2/2 C3/2 |

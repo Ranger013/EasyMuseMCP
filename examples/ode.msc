@@ -1,0 +1,20 @@
+title: 欢乐颂
+subtitle: Ode to Joy — L. van Beethoven
+composer: 贝多芬
+key: C
+time: 4/4
+tempo: 120
+
+part "Piano" instrument=piano staves=2 clefs=treble,bass
+
+voices 1
+|: E4/4 E4/4 F4/4 G4/4 | G4/4 F4/4 E4/4 D4/4 |
+C4/4 C4/4 D4/4 E4/4 | E4/4. D4/8 D4/2 |
+E4/4 E4/4 F4/4 G4/4 | G4/4 F4/4 E4/4 D4/4 |
+C4/4 C4/4 D4/4 E4/4 | D4/4. C4/8 C4/2 :|
+
+voices 2
+[C3 E3 G3]/1 | [G2 B2 D3]/1 |
+[C3 E3 G3]/1 | [G2 B2 D3]/1 |
+[C3 E3 G3]/1 | [G2 B2 D3]/1 |
+[C3 E3 G3]/1 | [G2 B2 D3]/2 [C3 E3 G3]/2 |

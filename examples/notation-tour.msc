@@ -1,0 +1,30 @@
+title: 记号大全
+subtitle: 装饰音 · 演奏法 · 踏板 · 渐强 · 变拍变调
+composer: DSH
+key: D
+time: 4/4
+tempo: 100
+systems: 4
+margins: 16
+
+part "Piano" instrument=piano staves=2 clefs=treble,bass
+
+voices 1
+D5/4%stacc E5/4%accent F#5/4%tenuto G5/4%marcato |
+gB5/16 A5/2%trill B5/2%fermata |
+@time=3/4 C#6/2.%mordent |
+D6/2 r/4 |
+%cresc E6/4 F#6/4 G6/4 %wedge-stop |
+A6/2. |
+@time=4/4 @key=G B5/1 |
+G5/1%fermata |]
+
+voices 2
+%ped [D3 F#3 A3]/1 |
+[D3 F#3 A3]/2 [A2 C#3 E3]/2 %ped-up |
+@time=3/4 %ped [G2 B2 D3]/2. |
+[G2 B2 D3]/2 %ped-up r/4 |
+%ped [A2 C#3 E3]/2. |
+[A2 C#3 E3]/2. %ped-up |
+@time=4/4 @key=G %ped [G2 B2 D3]/1 |
+[G2 B2 D3]/1 %ped-up |]

@@ -1,0 +1,21 @@
+title: 月光如水
+subtitle: 为钢琴的三拍子小歌
+composer: DSH
+key: G
+time: 3/4
+tempo: 96
+systems: 4
+
+part "Piano" instrument=piano staves=2 clefs=treble,bass
+
+voices 1
+B4/2!mp"月" D5/4"光" | E5/2"如" D5/4"水" |
+B4/2"洒" G4/4"满" | A4/2"窗" F#4/4"台" |
+G4/2!mf"你" B4/4"的" | E5/2"歌" C5/4"声" |
+D5/2"随" A4/4"风" | G4/2.!p"来" |
+
+voices 2
+G2/4 [B2 D3 G3]/4 [B2 D3 G3]/4 | C3/4 [E3 G3 C4]/4 [E3 G3 C4]/4 |
+G2/4 [B2 D3 G3]/4 [B2 D3 G3]/4 | D3/4 [F#3 A3 D4]/4 [F#3 A3 D4]/4 |
+E3/4 [G3 B3 E4]/4 [G3 B3 E4]/4 | C3/4 [E3 G3 C4]/4 [E3 G3 C4]/4 |
+D3/4 [F#3 A3 D4]/4 [F#3 A3 D4]/4 | G2/4 [B2 D3 G3]/2 |

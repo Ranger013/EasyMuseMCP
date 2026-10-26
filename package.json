@@ -1,0 +1,55 @@
+{
+  "name": "easmuse-mcp",
+  "version": "0.1.0",
+  "description": "Easy MuseScore MCP —— 用紧凑文本记谱直接生成与编辑 MuseScore 乐谱（mscz / pdf / png / midi / mp3），同时提供 MCP server 与 CLI。",
+  "type": "module",
+  "bin": {
+    "msc": "./bin/msc.js",
+    "easmuse-mcp": "./server.js"
+  },
+  "main": "lib/ops.js",
+  "exports": {
+    ".": "./lib/ops.js",
+    "./dsl": "./lib/dsl.js",
+    "./musicxml": "./lib/musicxml.js",
+    "./edit": "./lib/edit.js",
+    "./server": "./server.js"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "server.js",
+    "styles",
+    "examples",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "doctor": "node bin/msc.js doctor",
+    "test": "node test/run.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "musescore",
+    "sheet-music",
+    "musicxml",
+    "notation",
+    "score",
+    "music"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ranger013/EasMuseMCP.git"
+  },
+  "homepage": "https://github.com/Ranger013/EasMuseMCP#readme",
+  "bugs": {
+    "url": "https://github.com/Ranger013/EasMuseMCP/issues"
+  }
+}
