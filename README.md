@@ -1,8 +1,8 @@
-# EasMuseMCP
+# EasyMuseMCP
 
 **用一句话（或一次工具调用）直接写出真正的 MuseScore 乐谱。**
 
-EasMuseMCP 把「紧凑的文本记谱」编译成 MusicXML，再驱动 MuseScore 的命令行（无窗口）导出 `.mscz / .pdf / .png / .svg / .midi / .mp3`。它同时提供两个入口：
+EasyMuseMCP 把「紧凑的文本记谱」编译成 MusicXML，再驱动 MuseScore 的命令行（无窗口）导出 `.mscz / .pdf / .png / .svg / .midi / .mp3`。它同时提供两个入口：
 
 - **CLI（`msc`）** —— 人和脚本都能用
 - **MCP server** —— 让 Claude / Cursor / DSH 等 AI 客户端把它当成内置工具调用
@@ -39,7 +39,7 @@ EasMuseMCP 把「紧凑的文本记谱」编译成 MusicXML，再驱动 MuseScor
 
 这条路子的问题很明显：不能批量、不能无人值守、出错就卡在光标位置、也没法在服务器上跑。
 
-EasMuseMCP 换了个底层：**MuseScore 自带的无窗口转换模式**才是一台真正的「渲染引擎」——你只要把 MusicXML 交给它，它就能排出一份正经乐谱。于是问题变成「怎么把人类/模型想写的音乐，可靠地变成 MusicXML」，剩下的都交给 MuseScore。
+EasyMuseMCP 换了个底层：**MuseScore 自带的无窗口转换模式**才是一台真正的「渲染引擎」——你只要把 MusicXML 交给它，它就能排出一份正经乐谱。于是问题变成「怎么把人类/模型想写的音乐，可靠地变成 MusicXML」，剩下的都交给 MuseScore。
 
 实测：单页钢琴谱从文本到 PDF/PNG/MIDI/MP3 约 2–6 秒。
 
@@ -96,8 +96,8 @@ node bin/msc.js doctor
 ## 安装
 
 ```bash
-git clone https://github.com/Ranger013/EasMuseMCP.git
-cd EasMuseMCP
+git clone https://github.com/Ranger013/EasyMuseMCP.git
+cd EasyMuseMCP
 node bin/msc.js doctor
 ```
 
@@ -110,7 +110,7 @@ npm link          # 之后可以直接敲 msc
 或直接从仓库跑（无需安装）：
 
 ```bash
-npx github:Ranger013/EasMuseMCP doctor
+npx github:Ranger013/EasyMuseMCP doctor
 ```
 
 ---
@@ -170,9 +170,9 @@ server 走 **stdio**，所以配置里给一个启动命令即可。
 ```json
 {
   "mcpServers": {
-    "easmuse": {
+    "easymuse": {
       "command": "node",
-      "args": ["/绝对路径/EasMuseMCP/server.js"]
+      "args": ["/绝对路径/EasyMuseMCP/server.js"]
     }
   }
 }
@@ -187,7 +187,7 @@ server 走 **stdio**，所以配置里给一个启动命令即可。
         transport: stdio
         serverName: musescore          # 工具前缀 → mcp__musescore__*
         command: /usr/local/bin/node
-        args: ["/绝对路径/EasMuseMCP/server.js"]
+        args: ["/绝对路径/EasyMuseMCP/server.js"]
         toolCallTimeoutMs: 180000
         failOnStartupError: false
 ```
@@ -352,7 +352,7 @@ msc edit    <score> --ops '<JSON 数组>'
 ## 项目结构
 
 ```
-EasMuseMCP/
+EasyMuseMCP/
 ├── bin/msc.js            CLI 入口
 ├── server.js             MCP server（stdio，零依赖）
 ├── lib/

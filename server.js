@@ -6,7 +6,7 @@ import path from 'node:path';
 import * as ops from './lib/ops.js';
 import { DSL_REFERENCE } from './lib/reference.js';
 
-const SERVER_INFO = { name: 'easmuse-mcp', version: '0.1.0' };
+const SERVER_INFO = { name: 'easymuse-mcp', version: '0.1.0' };
 const DEFAULT_PROTOCOL = '2025-06-18';
 
 const FORMAT_ENUM = ['pdf', 'png', 'svg', 'mscz', 'midi', 'mp3', 'musicxml'];
